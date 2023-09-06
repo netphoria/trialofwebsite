@@ -16,23 +16,14 @@
   <link rel="alternate" href="https://www.ableton.com/de/packs/" hreflang="de">
   <link rel="alternate" href="https://www.ableton.com/ja/packs/" hreflang="ja">
   <link rel="alternate" href="https://www.ableton.com/en/packs/" hreflang="x-default">
-  
+
   <link rel="apple-touch-icon-precomposed" href="favicons/images-apple-touch-icon.fb3597184cb0.png">
   <link rel="shortcut icon" type="image/ico" href="favicons/images-favicon.f83afbda6c78.ico">
-  
   <link rel="preload" href="https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-book.2dadbb3c03c1.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-book-oblique.f859db99cda9.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/fonts/futura-pt-medium.b650e9c2aaf6.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  
   <link rel="stylesheet" href="https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/CACHE/css/output.7e27f4445efd.css" type="text/css">
-  <script>
-    try {
-      if (Function('/*@cc_on return document.documentMode===10@*/')()) {
-        document.documentElement.className += ' ie10';
-      }
-    } catch (error) {}
-  </script>
-  
+  <script> try { if(Function('/*@cc_on return document.documentMode===10@*/')()){ document.documentElement.className+=' ie10'; } } catch (error) {} </script>
   <script src="js/dist-biscuits-9d03ec16c6b1c3609646.8708fb575854.js"></script>
   <script>
     biscuits.configure({
@@ -50,75 +41,128 @@
       tagManagerScript: 'https://analytics.ableton.com/js/container_R5JVetMm.js',
       siteId: '1',
     }
+  
     matomoOptions['applyCustomSettings'] = false;
   </script>
   <script src="js/dist-matomo-9d03ec16c6b1c3609646.489c0056f480.js"></script>
   <script type="text/javascript">
     var ScarabQueue = ScarabQueue || [];
-
-    biscuits.when('scarab', function() {
-      (function(subdomain, id) {
-        if (document.getElementById(id)) return;
-        var js = document.createElement('script'); js.id = id;
-        js.src = subdomain + '.scarabresearch.com/js/18E53F1E59A0193A/scarab-v2.js';
-        var fs = document.getElementsByTagName('script')[0];
-        fs.parentNode.insertBefore(js, fs);
-      })('https:' == document.location.protocol ? 'https://recommender' : 'http://cdn', 'scarab-js-api');
+    biscuits.when('scarab', function (scarab) {
+      scarab.push(['setCustomerEmail', '', new Date()]);
+      scarab.push(['setAccountId', 'aefb9d0087f2a886']);
+      scarab.push(['setCartId', '5f59f6d46d6f614461c69f9e']);
+      scarab.push(['go']);
     });
-    ScarabQueue.push(['cart', [
-    ]]);
-    ScarabQueue.push(['go']);
   </script>
+  <script src="https://cdn.scarabresearch.com/js/scarab-v2.js"></script>
+  <script src="https://analytics.ableton.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js"></script>
+  <script>
+  try {
+    var html, inner, outer, width, widthNoScroll, widthWithScroll;
+
+    outer = document.createElement('div');
+
+    outer.style.visibility = 'hidden';
+    outer.style.width = '100px';
+    outer.style.msOverflowStyle = 'scrollbar';
+
+    document.body.appendChild(outer);
+
+    widthNoScroll = outer.offsetWidth;
+
+    outer.style.overflow = 'scroll';
+
+    inner = document.createElement("div");
+    inner.style.width = '100%';
+
+    outer.appendChild(inner);
+
+    widthWithScroll = inner.offsetWidth;
+
+    outer.parentNode.removeChild(outer);
+
+    width = widthNoScroll - widthWithScroll;
+
+    html = document.getElementsByTagName('html')[0];
+    html.className = html.className + ' scrollbar-width-' + width;
+  }
+  catch (exception) {}
+</script>
 </head>
 <body class="">
-<div id="main" class="main">
+  <div id="main" class="main">
     <header class="main-nav js-main-nav" id="js-headroom">
-        <nav aria-label="primary">
-            <a class="main-nav__logo" href="en.html">
-                <span class="abl-visually-hidden">Ableton Homepage</span>
-                <svg aria-hidden="true" focusable="false" class="main-nav__logo__image" xmlns="http://www.w3.org/2000/svg" width="45" height="21" viewbox="0 0 45 21">
-                    <path d="M0 0h3v21H0zM6 0h3v21H6zM12 0h3v21h-3zM18 0h3v21h-3zM24 18h21v3H24zM24 12h21v3H24zM24 6h21v3H24zM24 0h21v3H24z"></path>
-                </svg>
-            </a>
-            <button class="main-nav__trigger-label abl-btn--reset abl-hidden js-main-nav-trigger" aria-expanded="false" aria-haspopup="true" aria-controls="main-nav-content">Menu</button>
-            <a class="main-nav__trigger-label js-main-nav-link" href="#main-nav-content">Menu</a>
-            <div class="main-nav__primary-wrapper main-nav__primary-wrapper--collapses js-main-nav-primary-wrapper" id="main-nav-content">
-                <!-- ... (menu items and content) ... -->
-            </div>
-        </nav>
-    </header>
-    <div class="page">
-        <main>
-            <div class="panel-shop-message abl-cl-get-cl-banner abl-bg-grad-banner " style="--abl-cl-banner: #000000; --abl-cl-grad-banner-start: #dafd2b; --abl-cl-grad-banner-end: #f3a5ed">
-                <a class="abl-cl-get-cl-banner" href="education.html">
-                    <div class="panel-shop-message__headline">
-                        Students and teachers get 50% off Live
-                        Find out more: Break Selection For Live 9
-                    </div>
-                    <span class="a__info">You need <a href="/en/shop/#live">Live 9 Standard</a> or above.</span>
-                    <input class="button is-disabled" type="submit" value="Download">
-                </a>
-            </div>
-        </main>
-        <footer class="main-footer  ">
-            <!-- ... (footer content) ... -->
-        </footer>
-    </div>
-</div>
-<script>window.csrfToken = 'QX00g8JCG3ymapMQuVxr8nkDpeHSOFsBUxPz9XsMgeAJQsGJh9zC9ugqC8OPt98y';</script>
-<script src="js/js-output.514f7eea2ee9.js"></script>
-<script src="js/javascript-angular-1.4.7.min.338db4826dcb.js"></script>
-<script src="js/abl.filter-module.ee3b731411f5.js"></script>
-<script src="js/abl.filter-constants.5a69424f3546.js"></script>
-<script src="js/abl.filter-controller.54198e2df064.js"></script>
-<script src="js/abl.filter-directives.9abceba0239c.js"></script>
-<script src="js/abl.filter-packs_directives.2bfbd57c3d35.js"></script>
-<script src="js/account-authorization.5188ca704dbd.js"></script>
-<script id="app-options" type="application/json">{"facets": {"367": {"id": 367, "item_type": ["sounds", "paid"], "tags": {"genres": ["cinematic", "classical", "drone"], "instruments": ["</script>
-<script>
-    const options = JSON.parse(document.getElementById("app-options").textContent);
-    window.filter_app.value('options', options);
+      <nav aria-label="primary">
+        <a class="main-nav__logo" href="en.html">
+          <span class="abl-visually-hidden">Ableton Homepage</span>
+          <svg aria-hidden="true" focusable="false" class="main-nav__logo__image" xmlns="http://www.w3.org/2000/svg" width="45" height="21" viewbox="0 0 45 21">
+            <path d="M0 0h3v21H0zM6 0h3v21H6zM12 0h3v21h-3zM18 0h3v21h-3zM24 18h21v3H24zM24 12h21v3H24zM24 6h21v3H24zM24 0h21v3H24z"></path>
+          </svg>
+        </a>
+        <button class="main-nav__trigger-label abl-btn--reset abl-hidden js-main-nav-trigger" aria-expanded="false" aria-haspopup="true" aria-controls="main-nav-content">Menu</button>
+        <a class="main-nav__trigger-label js-main-nav-link" href="#main-nav-content">Menu</a>
+        <div class="main-nav__primary-wrapper main-nav__primary-wrapper--collapses js-main-nav-primary-wrapper" id="main-nav-content">
+          <ul class="main-nav__link-list main-nav__link-list--primary">
+            <li class="main-nav__link-list__item"><a href="live.html">Live</a></li>
+            <li class="main-nav__link-list__item"><a href="push.html">Push</a></li>
+            <li class="main-nav__link-list__item"><a href="note.html">Note</a></li>
+            <li class="main-nav__link-list__item"><a href="link.html">Link</a></li>
+            <li class="main-nav__link-list__item"><a href="shop.html">Shop</a></li>
+            <li class="main-nav__link-list__item is-active"><a href="packs.html" aria-current="page">Packs</a></li>
+            <li class="main-nav__link-list__item"><a href="help.html">Help</a></li>
+            <li class="main-nav__link-list__item main-nav__hide-small"><button class="abl-btn--reset abl-hidden main-nav__more-button js-main-nav-more-button" aria-expanded="false" aria-haspopup="true" aria-controls="more"></button><a class="js-main-nav-more-link" href="#more"><span>More</span><span class="main-nav__hide-on-more-collapsed"><span class="main-nav__icon main-nav__icon--collapse"></span></span><span class="main-nav__hide-on-more-expanded"><span class="main-nav__icon main-nav__icon--expand"></span></span></a></li>
+            <li class="main-nav__link-list__item main-nav__link-list__item--try"><a href="trial.html">Try Live for free</a></li>
+            <li class="main-nav__link-list__item main-nav__link-list__item--account"><a href="packs.html">Log in or register</a></li>
+          </ul>
+          <div class="main-nav__more js-main-nav-more-wrapper" id="more" aria-hidden>
+            <section class="main-nav__section js-main-nav-more-section" aria-label="More on Ableton.com:" tabindex="0">
+              <h3 class="main-nav__section-heading">More on Ableton.com:</h3>
+              <ul class="main-nav__link-list">
+                <li class="main-nav__link-list__item"><a href="blog.html" class="main-nav__link-list__link">Blog</a></li>
+                <li class="main-nav__link-list__item"><a href="classroom.html" class="main-nav__link-list__link">Ableton for the Classroom</a></li>
+                <li class="main-nav__link-list__item"><a href="colleges-universities.html" class="main-nav__link-list__link">Ableton for Colleges and Universities</a></li>
+                <li class="main-nav__link-list__item"><a href="certified-training.html" class="main-nav__link-list__link">Certified Training</a></li>
+                <li class="main-nav__link-list__item"><a href="community.html" class="main-nav__link-list__link">Community</a></li>
+                <li class="main-nav__link-list__item"><a href="education.html" class="main-nav__link-list__link">Education</a></li>
+                <li class="main-nav__link-list__item"><a href="language.html" class="main-nav__link-list__link">Language and location</a></li>
+                <li class="main-nav__link-list__item"><a href="push-and-live-packs.html" class="main-nav__link-list__link">Push and Live Packs</a></li>
+                <li class="main-nav__link-list__item"><a href="https://www.ableton.com/en/account/beta/" class="main-nav__link-list__link">Beta Program</a></li>
+                <li class="main-nav__link-list__item"><a href="https://www.ableton.com/en/account/friends/" class="main-nav__link-list__link">Refer a friend</a></li>
+                <li class="main-nav__link-list__item"><a href="https://www.ableton.com/en/account/serials/" class="main-nav__link-list__link">Redeem a serial</a></li>
+                <li class="main-nav__link-list__item"><a href="https://www.ableton.com/en/account/support/" class="main-nav__link-list__link">Support</a></li>
+                <li class="main-nav__link-list__item"><a href="https://www.ableton.com/en/account/orders/" class="main-nav__link-list__link">Your orders</a></li>
+              </ul>
+            </section>
+            <section class="main-nav__section js-main-nav-more-section" aria-label="About Ableton.com:" tabindex="0">
+              <h3 class="main-nav__section-heading">About Ableton.com:</h3>
+              <ul class="main-nav__link-list">
+                <li class="main-nav__link-list__item"><a href="https://www.ableton.com/en/account/jobs/" class="main-nav__link-list__link">Jobs</a></li>
+                <li class="main-nav__link-list__item"><a href="https://www.ableton.com/en/account/contact/" class="main-nav__link-list__link">Contact</a></li>
+                <li class="main-nav__link-list__item"><a href="https://www.ableton.com/en/account/press/" class="main-nav__link-list__link">Press</a></li>
+                <li class="main-nav__link-list__item"><a href="https://www.ableton.com/en/account/partners/" class="main-nav__link-list__link">Partners</a></li>
+              </ul>
+            </section>
+            <section class="main-nav__section js-main-nav-more-section" aria-label="Legal Info:" tabindex="0">
+              <h3 class="main-nav__section-heading">Legal Info:</h3>
+              <ul class="main-nav__link-list">
+                <li class="main-nav__link-list__item"><a href="https://www.ableton.com/en/account/terms-conditions/" class="main-nav__link-list__link">Terms and Conditions</a></li>
+                <li class="main-nav__link-list__item"><a href="https://www.ableton.com/en/account/privacy-policy/" class="main-nav__link-list__link">Privacy Policy</a></li>
+                <li class="main-nav__link-list__item"><a href="https://www.ableton.com/en/account/privacy-policy/#Cookie-Policy" class="main-nav__link-list__link">Cookie Policy</a></li>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <div class="main-nav__search js-main-nav-search" id="main-nav-search">
+          <button class="main-nav__search__trigger-label abl-btn--reset abl-hidden js-main-nav-search-trigger" aria-expanded="false" aria-haspopup="true" aria-controls="search"></button>
+          <a class="main-nav__search__trigger-label js-main-nav-link" href="#search">Search</a>
+          <div class="main-nav__search__wrapper" id="search" aria-hidden>
+            <section class="main-nav__search__section js-main-nav-search-section" aria-label="Search Ableton.com" tabindex="0">
+              <h3 class="main-nav__section-heading">Search Ableton.com</h3>
+              <div class="main-nav__search__content" data-frontend-search-form="{&quot;alias&quot;:&quot;default&quot;,&quot;autocomplete-iframe-src&quot;:&quot;https://cdn-resources.ableton.com/search/autocomplete.html&quot;,&quot;brands&quot;:[&quot;ableton&quot;,&quot;orchestra&nbsp;tools    &quot;,&quot;producerloops    &quot;,&quot;auddict&quot;@@.main-nav__link-list__item.main-nav__link-list__item--try a").removeAttr("href");  // Remove href attribute to make it non-clickable
+  });
+})(jQuery);
 </script>
-<link rel="stylesheet" href="https://cdn-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/CACHE/css/output.a53fe9b6d260.css" type="text/css">
+<script async="async" src="https://cdn.scarabresearch.com/js/scarab-v2.js"></script>
+<script src="https://analytics.ableton.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js"></script>
 </body>
 </html>
